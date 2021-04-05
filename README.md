@@ -31,3 +31,6 @@ Enter Your Router IP Address : 192.168.0.1
 ```
 ![Linux Usage](/img/linuxusage.png)
 
+If you have done this, then you will get a encrypted router configuration code that is saved to the conf.bin. the file is saved in the same directory with the setup file. Here is the code that gets from the exploit :
+
+
