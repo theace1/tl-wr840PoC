@@ -56,7 +56,7 @@ sudo route -n | grep 'UG[ \t]' | awk '{print $2}'
 ```
 ### Using ip r Command in Linux
 ```
-sudo ip r | grep default
+**root@dvuser:**sudo ip r | grep default
 default via 172.20.208.1 dev eth0
 ```
 
