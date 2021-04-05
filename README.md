@@ -10,8 +10,6 @@ https://blog.securelayer7.net/time-to-disable-tp-link-home-wifi-router/
 ## Requierments
 - curl, bash (if you use unix).
 
-## install the prerequisites
-
 ### Linux(Debian, Ubuntu, Kali, etc.)
 
 ```
