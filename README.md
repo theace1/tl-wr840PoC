@@ -1,3 +1,4 @@
+<img src="img/warning.png" align="right" />
 # TPLINK TL-WR804N Exploit
 This is Proof Of Concept based on CVE-2018-11714 which was found by *Thouid Shaikh*. This Issue is caused by broken session handling on firmware /cgi/ directory. That allow us to download the configuration file and gain access to admin configuration panel.
 
