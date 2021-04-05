@@ -48,6 +48,15 @@ Connection: keep-alive
 To decrypt this file easily, you can use a free software provided by [Nirsoft](https://www.nirsoft.net/utils/router_password_recovery.html) called Routerpassview. this is the problem, if you don't use the windows operating system then you can use virtual reactos (virtualbox, vmware, etc.) and run the routerpassview software on the virtual os.
 
 ## Finding your Router IP Address
+There are many ways to find out your IP gateway, for example by using the default GUI application or through the Command line interface. But usually professionals often use the command line interface because it is efficient and easier to read
+### Using route Command in Linux
+```
+sudo route -n | grep 'UG[ \t]' | awk '{print $2}'
+```
+### Using ip a Command in Linux
+```
+sudo ip a
+```
 
 ## Author
 thanks to all the friends who helped me complete this code. and thanks CVE Author for discovering this vulnerability.
