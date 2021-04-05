@@ -52,10 +52,12 @@ There are many ways to find out your IP gateway, for example by using the defaul
 ### Using route Command in Linux
 ```
 sudo route -n | grep 'UG[ \t]' | awk '{print $2}'
+172.20.208.1 
 ```
-### Using ip a Command in Linux
+### Using ip r Command in Linux
 ```
-sudo ip a
+sudo ip r | grep default
+default via 172.20.208.1 dev eth0
 ```
 
 ## Author
