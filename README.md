@@ -29,3 +29,5 @@ to execute this, make sure you have cloned this repository according to the oper
 theace1@linux:~./setup
 Enter Your Router IP Address : 192.168.0.1
 ```
+![Linux Usage](/img/linuxusage.png)
+
