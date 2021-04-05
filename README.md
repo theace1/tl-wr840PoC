@@ -1,4 +1,4 @@
-<img src="img/icon.png" align="right" width="200" height="300" />
+<img src="img/icon.png" align="right" width="180" height="270" />
 
 # TPLINK TL-WR804N Exploit ![](https://img.shields.io/static/v1?label=CVE%20SCORE&message=10.0&color=RED)
 
