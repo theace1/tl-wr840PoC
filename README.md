@@ -44,6 +44,7 @@ Connection: keep-alive
 ## How to Decrypt
 To decrypt this file easily, you can use a free software provided by [Nirsoft](https://www.nirsoft.net/utils/router_password_recovery.html) called Routerpassview. this is the problem, if you don't use the windows operating system then you can use virtual reactos (virtualbox, vmware, etc.) and run the routerpassview software on the virtual os.
 
+## Finding your Router IP Address
 
 ## Author
 thanks to all the friends who helped me complete this code. and thanks CVE Author for discovering this vulnerability.
