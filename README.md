@@ -51,7 +51,7 @@ Connection: keep-alive
 ```
 
 ## How to Decrypt
-To decrypt this file easily, you can use a free software provided by [Nirsoft](https://www.nirsoft.net/utils/router_password_recovery.html) called Routerpassview. this is the problem, if you don't use the windows operating system then you can use virtual reactos (virtualbox, vmware, etc.) and run the routerpassview software on the virtual os.
+To decrypt this file easily, you can use a free software provided by [Nirsoft](https://www.nirsoft.net/utils/router_password_recovery.html) called Routerpassview. this is the problem, if you don't use the windows operating system then you can use virtual [ReactOS](https://github.com/reactos/reactos) (virtualbox, vmware, etc.) and run the routerpassview software on the virtual os.
 
 ## Finding your Router IP Address Manually
 There are many ways to find out your IP gateway, for example by using the default GUI application or through the Command line interface. But usually professionals often use the command line interface because it is efficient and easier to read
