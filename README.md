@@ -30,6 +30,11 @@ to execute this, make sure you have cloned this repository according to the oper
 theace1@linux:~./setup
 Enter Your Router IP Address : 192.168.0.1
 ```
+Or if you have trouble finding the gateway, then you can use automatic mode, so the ip will be filled in automatically.
+```
+theace1@linux:~./setup -a
+Enter Your Router IP Address : 192.168.0.1
+```
 
 If you have done this, then you will get a encrypted router configuration code that is saved to the conf.bin. the file is saved in the same directory with the setup file. Here is the code that gets from the exploit :
 ```                                                                                    
