@@ -35,3 +35,6 @@ If you have done this, then you will get a encrypted router configuration code t
 
 ![Code Result](/img/encryptedcode.png)
 
+## How to Decrypt
+To decrypt this file easily, you can use a free software provided by [Nirsoft](https://nirsoft.com) called Routerpassview. this is the problem, if you don't use the windows operating system then you can use virtual reactos (virtualbox, vmware, etc.) and run the routerpassview software on the virtual os.
+
