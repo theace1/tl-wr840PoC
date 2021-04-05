@@ -15,5 +15,11 @@ https://blog.securelayer7.net/time-to-disable-tp-link-home-wifi-router/
 ### Linux(Debian, Ubuntu, Kali, etc.)
 
 ```
-apt-get install curl
+sudo apt-get install curl -y
+```
+
+### Linux (Using snap store)
+
+```
+sudo snap install curl-ijohnson --edge
 ```
