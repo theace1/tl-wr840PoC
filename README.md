@@ -29,11 +29,18 @@ to execute this, make sure you have cloned this repository according to the oper
 theace1@linux:~./setup
 Enter Your Router IP Address : 192.168.0.1
 ```
-![Linux Usage](/img/linuxusage.png)
 
 If you have done this, then you will get a encrypted router configuration code that is saved to the conf.bin. the file is saved in the same directory with the setup file. Here is the code that gets from the exploit :
+```                                                                                    
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream; charset=utf-8
+Content-Length: 6256
+Connection: keep-alive
 
-![Code Result](/img/encryptedcode.png)
++�ä�4�f�f1�^?O�vt�^GY&,���h[ڋ�lـ��.�-^Z&�d�DT^]���^Ry�^Tj�3R7B^U�5#B5m�)�=Q���\�^P�-���ĝ+�^A^W�h�Y��@ݠ��%^G����^C���^K�0&r����vj[��x��m�z^R����}֩j0���3��^Q�͎�|�^T}]^A$霤^A��#^T^Z��^O4���^W��n��l�^X�^S�j�Z��^S^X�;>
+�^���<^\��L������ԧ𧣩�����^S��|��
+
+```
 
 ## How to Decrypt
 To decrypt this file easily, you can use a free software provided by [Nirsoft](https://www.nirsoft.net/utils/router_password_recovery.html) called Routerpassview. this is the problem, if you don't use the windows operating system then you can use virtual reactos (virtualbox, vmware, etc.) and run the routerpassview software on the virtual os.
