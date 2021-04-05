@@ -51,12 +51,12 @@ To decrypt this file easily, you can use a free software provided by [Nirsoft](h
 There are many ways to find out your IP gateway, for example by using the default GUI application or through the Command line interface. But usually professionals often use the command line interface because it is efficient and easier to read
 ### Using route Command in Linux
 ```
-sudo route -n | grep 'UG[ \t]' | awk '{print $2}'
+root@linux:/# sudo route -n | grep 'UG[ \t]' | awk '{print $2}'
 172.20.208.1 
 ```
 ### Using ip r Command in Linux
 ```
-**root@dvuser:**sudo ip r | grep default
+root@linux:/# sudo ip r | grep default
 default via 172.20.208.1 dev eth0
 ```
 
