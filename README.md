@@ -8,4 +8,15 @@ So, I would like to ask all of you for help to contact the vendor to report this
 https://blog.securelayer7.net/time-to-disable-tp-link-home-wifi-router/
 
 ## Requierments
-curl, bash (if you use unix).
+- curl, bash (if you use unix).
+
+## install the prerequisites
+
+### Linux(Debian, Ubuntu, Kali, etc.)
+,,,
+apt-get install curl
+,,,
+
+,,,
+apt-get install bash
+,,,
