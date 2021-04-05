@@ -23,8 +23,6 @@ sudo snap install curl-ijohnson --edge
 ```
 ## How to Use
 to execute this, make sure you have cloned this repository according to the operating system you are using. is you use linux Use the ./setup script in /src/linux dir. otherwise, if you are using the windows operating system. you can do the same.
-
-### Linux
 ```
 theace1@linux:~./setup
 Enter Your Router IP Address : 192.168.0.1
