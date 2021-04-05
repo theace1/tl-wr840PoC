@@ -6,3 +6,6 @@ So, I would like to ask all of you for help to contact the vendor to report this
 
 ## CVE Source 
 https://blog.securelayer7.net/time-to-disable-tp-link-home-wifi-router/
+
+## Requierments
+curl, bash (if you use unix).
