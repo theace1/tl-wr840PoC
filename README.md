@@ -89,7 +89,7 @@ Decryption Complete. Now Open tmp.bin file for decrypted file.
 
 ```
 Then if the decryption is succeed, you can open the decrypted file using text editor eg: nano ,vim ,atom. then search **AdminPwd** string for getting admin username and admin password. Below we can see the password string that contains the word **speeditup123** as the admin password.
-***If the admin username is "admin", it will not be displayed in the decrypted file eg: ***	
+***If the admin username is "admin", it will not be displayed in the decrypted file eg:***	
 
 ```
 AdminPwd^C^@Espeeditup123
