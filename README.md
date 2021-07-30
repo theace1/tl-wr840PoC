@@ -33,7 +33,7 @@ theace1@linux:~./setup
 [ 3 ] Decrypt Config File
 [ x ] Exit
 
-dvuser>1
+theace1>1
 ```
 ### Automatic IP Finder
 Or if you have trouble finding the gateway, then you can use automatic mode, so the ip will be filled in automatically.
@@ -50,7 +50,7 @@ theace1@linux:~./setup -a
 [ 3 ] Decrypt Config File
 [ x ] Exit
 
-theace1> 2
+theace1>2
 
 ```
 
@@ -68,19 +68,25 @@ Connection: keep-alive
 ```
 
 ## How to Decrypt
-To decrypt this file easily, you can use a free software provided by [Nirsoft](https://www.nirsoft.net/utils/router_password_recovery.html) called Routerpassview. this is the problem, if you don't use the windows operating system then you can use virtual [ReactOS](https://github.com/reactos/reactos) (virtualbox, vmware, etc.) and run the routerpassview software on the virtual os.
+To decrypt this file easily, you can use a free software provided by [Nirsoft](https://www.nirsoft.net/utils/router_password_recovery.html) called Routerpassview. this is the problem, if you don't use the windows operating system then you can use virtual [ReactOS](https://github.com/reactos/reactos) (virtualbox, vmware, etc.) and run the routerpassview software on the virtual os. So if you are already united with your unix operating system, i was included automatic file decryption in the software based on dd and openssl.
 
-## Finding your Router IP Address Manually
-There are many ways to find out your IP gateway, for example by using the default GUI application or through the Command line interface. But usually professionals often use the command line interface because it is efficient and easier to read
-### Using route Command in Linux
 ```
-root@linux:/# sudo route -n | grep 'UG[ \t]' | awk '{print $2}'
-172.20.208.1 
-```
-### Using ip r Command in Linux
-```
-root@linux:/# sudo ip r | grep default
-default via 172.20.208.1 dev eth0
+-----------------------------------------
+-   TPLINK TL-WR840N Proof Of Concept   -
+-       Based on CVE-2018-11714         -
+-         Do at your own risk!          -
+-----------------------------------------
+
+[ 1 ] Manual
+[ 2 ] Automatic Gateway Finder
+[ 3 ] Decrypt Config File
+[ x ] Exit
+
+dvuser>3 
+
+Enter Your Config File Location (Blank for default): conf.bin
+Decryption Complete. Now Open tmp.bin file for decrypted file.
+
 ```
 
 ## Author
