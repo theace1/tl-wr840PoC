@@ -93,8 +93,14 @@ Then if the decryption is succeed, you can open the decrypted file using text ed
 
 ```
 AdminPwd^C^@Espeeditup123
+```
+
+If the admin username is a string other than "admin"
 
 ```
+Admintheace���^_Pwd^^speeditup
+```
+
 ## Author
 thanks to all the friends who helped me complete this code. and thanks CVE Author for discovering this vulnerability.
 - Code Author [theace1](https://github.com/theace1) [the4ce1@aol.com](mailto:the4ce.aol.com?subject=Hello%20theace%2C&body=I%20have%20an%20important%20comment%20for%20you) & CVE Author [Touhid Shaikh](https://blog.securelayer7.net/author/touhid/)  
