@@ -11,30 +11,47 @@ So, I would like to ask all of you for help to contact the vendor to report this
 https://blog.securelayer7.net/time-to-disable-tp-link-home-wifi-router/
 
 ## Requierments
-- curl, bash (if you use unix).
+- curl, bash, dd, openssl, net-tools.
 
 ### Linux(Debian, Ubuntu, Kali, etc.)
 
 ```
-sudo apt-get install curl -y
-```
-
-### Linux (Using snap store)
-
-```
-sudo snap install curl-ijohnson --edge
+sudo apt-get install curl dd openssl net-tools -y
 ```
 ## How to Use
 to execute this, make sure you have cloned this repository according to the operating system you are using. is you use linux Use the ./setup script in /src/linux dir. otherwise, if you are using the windows operating system. you can do the same.
 ```
 theace1@linux:~./setup
-Enter Your Router IP Address : 192.168.0.1
+-----------------------------------------
+-   TPLINK TL-WR840N Proof Of Concept   -
+-       Based on CVE-2018-11714         -
+-         Do at your own risk!          -
+-----------------------------------------
+
+[ 1 ] Manual
+[ 2 ] Automatic Gateway Finder
+[ 3 ] Decrypt Config File
+[ x ] Exit
+
+dvuser>1
 ```
 ### Automatic IP Finder
 Or if you have trouble finding the gateway, then you can use automatic mode, so the ip will be filled in automatically.
 ```
 theace1@linux:~./setup -a
-Enter Your Router IP Address : 192.168.0.1
+-----------------------------------------
+-   TPLINK TL-WR840N Proof Of Concept   -
+-       Based on CVE-2018-11714         -
+-         Do at your own risk!          -
+-----------------------------------------
+
+[ 1 ] Manual
+[ 2 ] Automatic Gateway Finder
+[ 3 ] Decrypt Config File
+[ x ] Exit
+
+theace1> 2
+
 ```
 
 If you have done this, then you will get a encrypted router configuration code that is saved to the conf.bin. the file is saved in the same directory with the setup file. Here is the code that gets from the exploit :
